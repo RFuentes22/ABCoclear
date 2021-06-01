@@ -30,33 +30,21 @@ class LevelsExcersicesFragment : Fragment() {
 
                 var fragment = RVExercisesFragment.newInstance(1)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in, R.anim.push_left_out, R.anim.push_left_in, R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
 
             ib_excersises_level2.setOnClickListener {
 
                 var fragment = RVExercisesFragment.newInstance(2)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
 
             ib_excersises_level3.setOnClickListener {
 
                 var fragment = RVExercisesFragment.newInstance(3)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
         }
     }

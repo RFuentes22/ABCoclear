@@ -16,31 +16,18 @@ class LevelsSoundsFragment : Fragment() {
             ib_sounds_level1.setOnClickListener {
                 var fragment = SoundFragment.newInstance(1)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in, R.anim.push_left_out, R.anim.push_left_in, R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
 
             ib_sounds_level2.setOnClickListener {
                 var fragment = SoundFragment.newInstance(2)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
             }
 
             ib_sounds_level3.setOnClickListener {
                 var fragment = SoundFragment.newInstance(3)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
         }
     }

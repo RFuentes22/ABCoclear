@@ -64,11 +64,6 @@ class SoundFragment(private val level: Int): Fragment(){
         view.close_button.setOnClickListener {
             var fragment = LevelsSoundsFragment.newInstance()
 
-            fragmentManager!!
-                    .beginTransaction()
-                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                    .replace(R.id.fl_content, fragment)
-                    .commit()
 
 
         }
