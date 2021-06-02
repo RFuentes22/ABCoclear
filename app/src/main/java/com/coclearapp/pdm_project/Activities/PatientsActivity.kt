@@ -63,7 +63,7 @@ class PatientsActivity: AppCompatActivity(), LifecycleOwner {
 
     private fun patientItemClicked(item: Patient){
 
-        startActivity(Intent(this, LevelsActivity::class.java).putExtra("name",item.Name_Patient))
+        startActivity(Intent(this, LevelsActivity::class.java).putExtra("name",item.Name_Patient).putExtra("level",item.Level.toString()))
     }
 
     private fun getDataFirebase(){

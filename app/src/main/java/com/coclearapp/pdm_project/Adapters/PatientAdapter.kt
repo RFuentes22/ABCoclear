@@ -34,7 +34,7 @@ class PatientAdapter(var items : List<Patient>, val clickListener : (Patient) ->
 
         fun bind(item: Patient, clickListener: (Patient) -> Unit) = with(itemView) {
             patient_name.text = item.Name_Patient
-            patient_level.text = item.Level.toString()
+
             this.setOnClickListener { clickListener(item) }
         }
     }

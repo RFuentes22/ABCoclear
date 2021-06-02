@@ -19,10 +19,9 @@ class LevelsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_levels)
 
         patient_name_levels.text = intent.getStringExtra("name")
+        patient_level_levels.text = intent.getStringExtra("level")
 
-
-
-        btn_sounds.setOnClickListener {
+        btn_vowels.setOnClickListener {
 
 
         }
