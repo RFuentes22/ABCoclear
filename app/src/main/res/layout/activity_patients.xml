@@ -18,10 +18,10 @@
 
         <ImageButton
             android:id="@+id/btn_search_patient"
-            android:layout_width="wrap_content"
+            android:layout_width="4dp"
             android:layout_height="45dp"
             android:layout_weight="1"
-            android:background="@drawable/ic_icons8_busqueda"
+            android:background="@drawable/ic_magnifying_glass"
 
             />
     </LinearLayout>

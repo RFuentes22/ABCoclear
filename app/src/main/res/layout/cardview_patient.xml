@@ -17,14 +17,13 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:padding="@dimen/medium_size"
-            android:background="@drawable/rounded_edge"
+            android:background="@drawable/myrect"
             >
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/ic_icons8_contactos" />
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_user" />
 
             <TextView
                 android:id="@+id/patient_name"
@@ -35,7 +34,7 @@
                 android:text="@string/pacient_name"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="@dimen/extra_size"
-            android:fontFamily="@font/action_man_shaded"/>
+            android:fontFamily="@font/roboto_medium"/>
 
             <TextView
                 android:id="@+id/patient_level"
@@ -46,7 +45,7 @@
                 android:text="2"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="@dimen/extra_size"
-            android:fontFamily="@font/angles_octagon"/>
+            android:fontFamily="@font/roboto_medium"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
