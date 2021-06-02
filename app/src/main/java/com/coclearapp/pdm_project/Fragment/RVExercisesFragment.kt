@@ -45,11 +45,7 @@ class RVExercisesFragment(private var level: Int): Fragment(){
     private fun exerciseItemClicked(item: Exercise){
         var fragment = ExercisesFragment.newInstance(item)
 
-        fragmentManager!!
-            .beginTransaction()
-            .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-            .replace(R.id.fl_content, fragment)
-            .commit()
+
 
     }
 
@@ -76,11 +72,7 @@ class RVExercisesFragment(private var level: Int): Fragment(){
         view.close_button.setOnClickListener {
             var fragment = LevelsExcersicesFragment.newInstance()
 
-            fragmentManager!!
-                    .beginTransaction()
-                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                    .replace(R.id.fl_content, fragment)
-                    .commit()
+
         }
 
         view.id_level_rv.text = "${view.id_level_rv.text} ${level.toString()}"

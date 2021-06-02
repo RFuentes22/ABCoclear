@@ -60,11 +60,6 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
                             var fragment = newInstance(exer)
 
-                            fragmentManager!!
-                                    .beginTransaction()
-                                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                                    .replace(R.id.fl_content, fragment)
-                                    .commit()
 
                         }
                     }else{
@@ -73,11 +68,6 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
                             var fragment = LevelsExcersicesFragment.newInstance()
 
-                            fragmentManager!!
-                                    .beginTransaction()
-                                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                                    .replace(R.id.fl_content, fragment)
-                                    .commit()
 
                         }
 
@@ -117,11 +107,6 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
                             var fragment = newInstance(exer)
 
-                            fragmentManager!!
-                                    .beginTransaction()
-                                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                                    .replace(R.id.fl_content, fragment)
-                                    .commit()
 
                         }
                     }else{
@@ -130,11 +115,6 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
                             var fragment = LevelsExcersicesFragment.newInstance()
 
-                            fragmentManager!!
-                                    .beginTransaction()
-                                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                                    .replace(R.id.fl_content, fragment)
-                                    .commit()
 
                         }
                     }
@@ -168,11 +148,6 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
                             var fragment = newInstance(exer)
 
-                            fragmentManager!!
-                                    .beginTransaction()
-                                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                                    .replace(R.id.fl_content, fragment)
-                                    .commit()
 
                         }
                     }else{
@@ -181,11 +156,6 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
                             var fragment = LevelsExcersicesFragment.newInstance()
 
-                            fragmentManager!!
-                                    .beginTransaction()
-                                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                                    .replace(R.id.fl_content, fragment)
-                                    .commit()
 
                         }
                     }
@@ -209,11 +179,7 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
         view.close_question.setOnClickListener {
             var fragment = RVExercisesFragment.newInstance(exercise.Level)
 
-            fragmentManager!!
-                .beginTransaction()
-                .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                .replace(R.id.fl_content, fragment)
-                .commit()
+
         }
 
         return view

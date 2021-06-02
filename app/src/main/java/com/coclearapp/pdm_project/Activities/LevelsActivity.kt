@@ -20,36 +20,13 @@ class LevelsActivity : AppCompatActivity() {
 
         patient_name_levels.text = intent.getStringExtra("name")
 
-        btn_exercises.setOnClickListener {
-            hand_pointer.visibility = View.INVISIBLE
-            changeFragmentExercises()
 
-        }
 
         btn_sounds.setOnClickListener {
-            hand_pointer.visibility = View.INVISIBLE
-            changeFragmentSounds()
+
+
         }
 
     }
 
-    fun changeFragmentSounds() {
-        var fragment = LevelsSoundsFragment.newInstance()
-
-        supportFragmentManager
-                .beginTransaction()
-                .setCustomAnimations(R.anim.push_left_in, R.anim.push_left_out, R.anim.push_left_in, R.anim.push_left_out)
-                .replace(R.id.fl_content, fragment)
-                .commit()
-    }
-
-    fun changeFragmentExercises() {
-        var fragment = LevelsExcersicesFragment.newInstance()
-
-        supportFragmentManager
-                .beginTransaction()
-                .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                .replace(R.id.fl_content, fragment)
-                .commit()
-    }
 }
