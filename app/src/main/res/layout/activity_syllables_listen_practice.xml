@@ -17,11 +17,11 @@
         <ImageView
                 android:layout_width="0.5in"
                 android:layout_height="0.5in"
-                android:src="@drawable/app_icon"
+                android:src="@drawable/ic_book_leves"
                 />
 
         <LinearLayout
-                android:id="@+id/listen"
+                android:id="@+id/syllables_listen"
                 android:layout_width="2in"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -47,7 +47,7 @@
         </LinearLayout>
 
         <LinearLayout
-                android:id="@+id/practice"
+                android:id="@+id/syllables_practice"
                 android:layout_width="2in"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
