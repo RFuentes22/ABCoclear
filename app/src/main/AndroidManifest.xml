@@ -14,9 +14,13 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
         <activity
+                android:name=".Activities.AnimalListen"
+                android:screenOrientation="userLandscape">
+        </activity>
+        <activity
                 android:name=".Activities.InstrumentsListenPractice"
                 android:label="@string/title_activity_instruments_listen_practice"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoActionBar"></activity>
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoActionBar" />
         <activity
                 android:name=".Activities.AnimalsListenPractice"
                 android:label="@string/title_activity_animals_listen_practice"
