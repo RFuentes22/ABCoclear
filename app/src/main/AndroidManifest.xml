@@ -18,6 +18,10 @@
                 android:screenOrientation="userLandscape">
         </activity>
         <activity
+                android:name=".Activities.InstrumentsListen"
+                android:screenOrientation="userLandscape">
+        </activity>
+        <activity
                 android:name=".Activities.InstrumentsListenPractice"
                 android:label="@string/title_activity_instruments_listen_practice"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoActionBar" />

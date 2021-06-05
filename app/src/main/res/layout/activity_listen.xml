@@ -8,7 +8,7 @@
         tools:context=".Activities.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_animals_listen"
+            android:id="@+id/recycler_view_listen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="12dp"

@@ -1,11 +1,9 @@
 package com.coclearapp.pdm_project.Activities
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.coclearapp.pdm_project.ViewModel.LevelViewModel
-import com.coclearapp.pdm_project.Fragment.LevelsExcersicesFragment
-import com.coclearapp.pdm_project.Fragment.LevelsSoundsFragment
 import com.coclearapp.pdm_project.R
 import kotlinx.android.synthetic.main.activity_levels.*
 
@@ -24,6 +22,24 @@ class LevelsActivity : AppCompatActivity() {
         btn_vowels.setOnClickListener {
 
 
+        }
+
+        btn_animal.setOnClickListener {
+/*            startActivity(
+                Intent(
+                    this,
+                    AnimalListen::class.java
+                )
+            )*/
+        }
+
+        btn_instruments.setOnClickListener {
+/*            startActivity(
+                Intent(
+                    this,
+                    InstrumentsListen::class.java
+                )
+            )*/
         }
 
     }

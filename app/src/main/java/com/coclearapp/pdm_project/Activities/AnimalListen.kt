@@ -18,9 +18,9 @@ class AnimalListen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_animal_listen)
+        setContentView(R.layout.activity_listen)
 
-        rexyclerView = findViewById(R.id.recycler_view_animals_listen)
+        rexyclerView = findViewById(R.id.recycler_view_listen)
         gridLayoutManager = GridLayoutManager(applicationContext,2,LinearLayoutManager.VERTICAL,false)
         rexyclerView?.layoutManager = gridLayoutManager
         rexyclerView?.setHasFixedSize(false)
