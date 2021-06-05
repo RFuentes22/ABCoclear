@@ -34,12 +34,12 @@ class LevelsActivity : AppCompatActivity() {
         }
 
         btn_instruments.setOnClickListener {
-/*            startActivity(
+            startActivity(
                 Intent(
                     this,
                     InstrumentsListen::class.java
                 )
-            )*/
+            )
         }
 
     }
