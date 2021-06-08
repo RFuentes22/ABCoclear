@@ -20,13 +20,17 @@
         <activity
                 android:name=".Activities.InstrumentsListenPractice"
                 android:label="@string/title_activity_instruments_listen_practice"
+                android:screenOrientation="userLandscape"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoActionBar" />
         <activity
                 android:name=".Activities.AnimalsListenPractice"
                 android:label="@string/title_activity_animals_listen_practice"
+                android:screenOrientation="userLandscape"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.NoActionBar" />
-        <activity android:name=".Activities.SyllablesListenPractice" />
-        <activity android:name=".Activities.VowelsListenPractice" />
+        <activity android:name=".Activities.SyllablesListenPractice"
+                android:screenOrientation="userLandscape"/>
+        <activity android:name=".Activities.VowelsListenPractice"
+                android:screenOrientation="userLandscape"/>
         <activity
                 android:name=".Activities.LoginActivity"
                 android:screenOrientation="userLandscape"

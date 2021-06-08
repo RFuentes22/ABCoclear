@@ -7,8 +7,9 @@
               android:gravity="right|center">
 
     <ImageView
-            android:layout_width="2.5in"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:src="@drawable/owl"
             android:layout_gravity="center"
             android:layout_margin="30dp"
