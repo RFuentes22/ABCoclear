@@ -19,8 +19,51 @@ class LevelsActivity : AppCompatActivity() {
         patient_name_levels.text = intent.getStringExtra("name")
         patient_level_levels.text = intent.getStringExtra("level")
 
-        btn_vowels.setOnClickListener {
+        back_patients.setOnClickListener{
+            onBackPressed();
+        }
 
+        btn_vowels.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    VowelsListenPractice::class.java
+                )
+
+                )
+
+        }
+
+        btn_animal.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    AnimalsListenPractice::class.java
+                )
+
+            )
+
+        }
+
+        btn_instruments.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    InstrumentsListenPractice::class.java
+                )
+
+            )
+
+        }
+
+        btn_syllabus.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    SyllablesListenPractice::class.java
+                )
+
+            )
 
         }
 
