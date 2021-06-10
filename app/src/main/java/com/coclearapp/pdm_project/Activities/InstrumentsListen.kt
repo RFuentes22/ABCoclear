@@ -34,20 +34,20 @@ class InstrumentsListen : AppCompatActivity() {
 
     private fun setDataInList(): ArrayList<Instrument>? {
         var items:ArrayList<Instrument> = ArrayList()
-        items.add(Instrument(R.drawable.armonica))
-        items.add(Instrument(R.drawable.arpa))
-        items.add(Instrument(R.drawable.clarinete))
+        items.add(Instrument(R.drawable.ic_harmonica))
+        items.add(Instrument(R.drawable.ic_harp))
+        items.add(Instrument(R.drawable.ic_clarinet))
         items.add(Instrument(R.drawable.corno))
         items.add(Instrument(R.drawable.flauta))
-        items.add(Instrument(R.drawable.guitarra_electrica))
+        items.add(Instrument(R.drawable.ic_electric_guitar))
         items.add(Instrument(R.drawable.pandereta))
-        items.add(Instrument(R.drawable.platillos))
-        items.add(Instrument(R.drawable.saxofon))
-        items.add(Instrument(R.drawable.tambor))
-        items.add(Instrument(R.drawable.triangulo))
-        items.add(Instrument(R.drawable.trompeta))
+        items.add(Instrument(R.drawable.ic_cymbal))
+        items.add(Instrument(R.drawable.ic_saxophone))
+        items.add(Instrument(R.drawable.ic_drum))
+        items.add(Instrument(R.drawable.ic_triangle))
+        items.add(Instrument(R.drawable.ic_trumpet))
         items.add(Instrument(R.drawable.violin))
-        items.add(Instrument(R.drawable.xilofon))
+        items.add(Instrument(R.drawable.ic_xylophone))
 
         return items
     }
