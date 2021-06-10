@@ -67,24 +67,6 @@ class LevelsActivity : AppCompatActivity() {
 
         }
 
-        btn_animal.setOnClickListener {
-/*            startActivity(
-                Intent(
-                    this,
-                    AnimalListen::class.java
-                )
-            )*/
-        }
-
-        btn_instruments.setOnClickListener {
-            startActivity(
-                Intent(
-                    this,
-                    InstrumentsListen::class.java
-                )
-            )
-        }
-
     }
 
 }
