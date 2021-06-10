@@ -13,16 +13,25 @@
             android:roundIcon="@drawable/app_icon"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-        <activity android:name=".Activities.SyllableListen"></activity>
+        <activity android:name=".Activities.SyllableListen"
+                  android:screenOrientation="userLandscape">
+
+        </activity>
         <activity
                 android:name=".Activities.VowelsListen"
-                android:screenOrientation="userLandscape"></activity>
+                android:screenOrientation="userLandscape">
+
+        </activity>
         <activity
                 android:name=".Activities.AnimalListen"
-                android:screenOrientation="userLandscape"></activity>
+                android:screenOrientation="userLandscape">
+
+        </activity>
         <activity
                 android:name=".Activities.InstrumentsListen"
-                android:screenOrientation="userLandscape"></activity>
+                android:screenOrientation="userLandscape">
+
+        </activity>
         <activity
                 android:name=".Activities.InstrumentsListenPractice"
                 android:label="@string/title_activity_instruments_listen_practice"
