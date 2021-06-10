@@ -40,6 +40,10 @@ class SyllableListen : AppCompatActivity() {
         items.add(Syllable(R.drawable.a))
         items.add(Syllable(R.drawable.a))
         items.add(Syllable(R.drawable.a))
+        items.add(Syllable(R.drawable.a))
+        items.add(Syllable(R.drawable.a))
+        items.add(Syllable(R.drawable.a))
+        items.add(Syllable(R.drawable.a))
 
         return items
     }
