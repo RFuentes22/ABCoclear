@@ -16,8 +16,8 @@ class SyllableAdapter(var context: Context, var arrayList: ArrayList<Syllable>):
     var mMediaPlayer: MediaPlayer? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SyllableAdapter.ItemHolder {
-        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_animal_list_item,parent,false)
-        return SyllableAdapter.ItemHolder(itemHolder)
+        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_syllable_list_item,parent,false)
+        return ItemHolder(itemHolder)
     }
 
     override fun onBindViewHolder(holder: SyllableAdapter.ItemHolder, position: Int) {
