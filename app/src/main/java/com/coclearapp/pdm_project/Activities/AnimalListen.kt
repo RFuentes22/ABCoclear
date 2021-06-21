@@ -35,7 +35,7 @@ class AnimalListen : AppCompatActivity() {
     private fun setDataInList():ArrayList<Animal>{
         var items:ArrayList<Animal> = ArrayList()
         items.add(Animal(R.drawable.caballo))
-        items.add(Animal(R.drawable.pollito))
+        items.add(Animal(R.drawable.elefante))
         items.add(Animal(R.drawable.gallo))
         items.add(Animal(R.drawable.gato))
         items.add(Animal(R.drawable.oveja))

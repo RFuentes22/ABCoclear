@@ -46,7 +46,7 @@ class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):Recy
             context,
             when (id) {
                 0 -> R.raw.caballo
-                1 -> R.raw.pollito
+                1 -> R.raw.elefante
                 2 -> R.raw.gallo
                 3 -> R.raw.gato
                 4 -> R.raw.oveja
