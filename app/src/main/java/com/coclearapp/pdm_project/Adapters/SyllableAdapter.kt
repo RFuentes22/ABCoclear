@@ -7,23 +7,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.Models.Animal
+import com.coclearapp.pdm_project.Models.Syllable
 import com.coclearapp.pdm_project.R
-import kotlinx.android.synthetic.main.grid_animal_list_item.view.*
 
-class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):RecyclerView.Adapter<AnimalAdapter.ItemHolder>(){
+class SyllableAdapter(var context: Context, var arrayList: ArrayList<Syllable>): RecyclerView.Adapter<SyllableAdapter.ItemHolder>() {
     var mMediaPlayer: MediaPlayer? = null
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder{
-        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_animal_list_item,parent,false)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SyllableAdapter.ItemHolder {
+        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_syllable_list_item,parent,false)
         return ItemHolder(itemHolder)
     }
 
-    override fun onBindViewHolder(holder: ItemHolder, position: Int) {
-        var animals:Animal = arrayList.get(position)
+    override fun onBindViewHolder(holder: SyllableAdapter.ItemHolder, position: Int) {
+        var syllables:Syllable = arrayList.get(position)
 
-        holder.icons.setImageResource(animals.iconsAnimal!!)
+        holder.icons.setImageResource(syllables.iconsSyllable!!)
         holder.icons.setOnClickListener {
             //  Log.i("myTag", instrument.iconsInstrument.toString());
             Log.i("myTag", holder.adapterPosition.toString());
@@ -45,16 +45,16 @@ class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):Recy
         val mediaPlayer: MediaPlayer? = MediaPlayer.create(
             context,
             when (id) {
-                0 -> R.raw.caballo
-                1 -> R.raw.elefante
-                2 -> R.raw.gallo
-                3 -> R.raw.gato
-                4 -> R.raw.oveja
-                5 -> R.raw.pato
-                6 -> R.raw.perro
-                7 -> R.raw.rana
-                8 -> R.raw.vaca
-                9 -> R.raw.pajaro
+                0 -> R.raw.ma
+                1 -> R.raw.me
+                2 -> R.raw.mi
+                3 -> R.raw.mo
+                4 -> R.raw.mu
+                5 -> R.raw.ama
+                6 -> R.raw.ema
+                7 -> R.raw.eme
+                8 -> R.raw.amo
+                9 -> R.raw.mimo
                 else -> Log.e("No Sound", "Error no sound")
             }
         )

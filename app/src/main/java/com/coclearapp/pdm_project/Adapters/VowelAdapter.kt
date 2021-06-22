@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.Models.Animal
+import com.coclearapp.pdm_project.Models.Vowel
 import com.coclearapp.pdm_project.R
-import kotlinx.android.synthetic.main.grid_animal_list_item.view.*
 
-class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):RecyclerView.Adapter<AnimalAdapter.ItemHolder>(){
+class VowelAdapter(var context: Context, var arrayList: ArrayList<Vowel>):RecyclerView.Adapter<VowelAdapter.ItemHolder>() {
+
     var mMediaPlayer: MediaPlayer? = null
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder{
-        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_animal_list_item,parent,false)
-        return ItemHolder(itemHolder)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
+        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_vowel_list_item,parent,false)
+        return VowelAdapter.ItemHolder(itemHolder)
     }
 
     override fun onBindViewHolder(holder: ItemHolder, position: Int) {
-        var animals:Animal = arrayList.get(position)
+        var animals: Vowel = arrayList.get(position)
 
-        holder.icons.setImageResource(animals.iconsAnimal!!)
+        holder.icons.setImageResource(animals.iconsVowel!!)
+
         holder.icons.setOnClickListener {
-            //  Log.i("myTag", instrument.iconsInstrument.toString());
             Log.i("myTag", holder.adapterPosition.toString());
-
             playSound(it, holder.adapterPosition)
         }
     }
@@ -45,16 +45,11 @@ class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):Recy
         val mediaPlayer: MediaPlayer? = MediaPlayer.create(
             context,
             when (id) {
-                0 -> R.raw.caballo
-                1 -> R.raw.elefante
-                2 -> R.raw.gallo
-                3 -> R.raw.gato
-                4 -> R.raw.oveja
-                5 -> R.raw.pato
-                6 -> R.raw.perro
-                7 -> R.raw.rana
-                8 -> R.raw.vaca
-                9 -> R.raw.pajaro
+                0 -> R.raw.a
+                1 -> R.raw.e
+                2 -> R.raw.i
+                3 -> R.raw.o
+                4 -> R.raw.u
                 else -> Log.e("No Sound", "Error no sound")
             }
         )
@@ -69,4 +64,5 @@ class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):Recy
             mMediaPlayer = null
         }
     }
+
 }
