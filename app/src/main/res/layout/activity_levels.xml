@@ -110,10 +110,10 @@
                     android:orientation="vertical">
                 <ImageButton
                         android:id="@+id/btn_syllabus"
-                        android:layout_width="100dp"
+                        android:layout_width="125dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/ic_book_leves"
+                        android:background="@drawable/syllables_image"
                         android:layout_margin="@dimen/small_size"/>
 
                 <TextView

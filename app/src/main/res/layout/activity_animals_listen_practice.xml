@@ -4,6 +4,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+    android:background="#C6EB9D"
         android:gravity="center"
         android:padding="16dp"
         >
@@ -27,7 +28,7 @@
                 android:layout_gravity="center"
                 android:padding="28dp"
                 android:elevation="10dp"
-                android:background="@drawable/bg_color_1"
+                android:background="@drawable/border"
                 android:layout_margin="5dp">
 
             <ImageButton
@@ -53,7 +54,7 @@
                 android:layout_gravity="center"
                 android:padding="28dp"
                 android:elevation="10dp"
-                android:background="@drawable/bg_color_1"
+                android:background="@drawable/border"
                 android:layout_margin="5dp">
 
             <ImageButton
