@@ -45,8 +45,8 @@ class LevelsSoundsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        model = activity?.run {
-            ViewModelProviders.of(this).get(LevelViewModel::class.java)
+        model = activity.run {
+            ViewModelProviders.of(this!!).get(LevelViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
 
     }

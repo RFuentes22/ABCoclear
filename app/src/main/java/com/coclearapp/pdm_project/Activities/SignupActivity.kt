@@ -68,7 +68,7 @@ class SignupActivity : AppCompatActivity() {
 
                     //Guarda datos en Firebase
                     childUpdates.put("/User/" + user!!.uid + "/Name", input_name.text.toString())
-                    childUpdates.put("/User/" + user!!.uid + "/Tipo", tipoUser)
+                    childUpdates.put("/User/" + user.uid + "/Tipo", tipoUser)
 
                     //Guarda datos en BD
                     val viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)

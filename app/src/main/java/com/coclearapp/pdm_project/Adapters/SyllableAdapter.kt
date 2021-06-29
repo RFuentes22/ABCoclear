@@ -26,7 +26,7 @@ class SyllableAdapter(var context: Context, var arrayList: ArrayList<Syllable>):
         holder.icons.setImageResource(syllables.iconsSyllable!!)
         holder.icons.setOnClickListener {
             //  Log.i("myTag", instrument.iconsInstrument.toString());
-            Log.i("myTag", holder.adapterPosition.toString());
+            Log.i("myTag", holder.adapterPosition.toString())
 
             playSound(it, holder.adapterPosition)
         }

@@ -26,7 +26,7 @@ class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):Recy
         holder.icons.setImageResource(animals.iconsAnimal!!)
         holder.icons.setOnClickListener {
             //  Log.i("myTag", instrument.iconsInstrument.toString());
-            Log.i("myTag", holder.adapterPosition.toString());
+            Log.i("myTag", holder.adapterPosition.toString())
 
             playSound(it, holder.adapterPosition)
         }
