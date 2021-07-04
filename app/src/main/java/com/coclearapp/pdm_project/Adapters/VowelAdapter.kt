@@ -27,7 +27,7 @@ class VowelAdapter(var context: Context, var arrayList: ArrayList<Vowel>):Recycl
         holder.icons.setImageResource(animals.iconsVowel!!)
 
         holder.icons.setOnClickListener {
-            Log.i("myTag", holder.adapterPosition.toString());
+            Log.i("myTag", holder.adapterPosition.toString())
             playSound(it, holder.adapterPosition)
         }
     }

@@ -20,7 +20,7 @@ class LevelsActivity : AppCompatActivity() {
         patient_level_levels.text = intent.getStringExtra("level")
 
         back_patients.setOnClickListener{
-            onBackPressed();
+            onBackPressed()
         }
 
         btn_vowels.setOnClickListener {

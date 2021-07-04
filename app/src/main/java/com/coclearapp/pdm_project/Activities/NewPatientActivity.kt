@@ -37,16 +37,16 @@ class NewPatientActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
         getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_form_pacient)
         var patientDate = this.findViewById(R.id.id_patient_date) as EditText
         patientDate.setOnClickListener{
-            var day = calendar.get(Calendar.DAY_OF_MONTH);
-            var month = calendar.get(Calendar.MONTH);
-            var year = calendar.get(Calendar.YEAR);
+            var day = calendar.get(Calendar.DAY_OF_MONTH)
+            var month = calendar.get(Calendar.MONTH)
+            var year = calendar.get(Calendar.YEAR)
             val dpd= DatePickerDialog(this,DatePickerDialog.OnDateSetListener{view, year, month, dayOfMonth ->
                 patientDate.setText("" + day + "/" + (month+1) + "/" + year)
 

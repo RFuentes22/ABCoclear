@@ -23,8 +23,8 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        model = activity?.run {
-            ViewModelProviders.of(this).get(LevelViewModel::class.java)
+        model = activity.run {
+            ViewModelProviders.of(this!!).get(LevelViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
 
     }
@@ -34,7 +34,7 @@ class ExercisesFragment(private val exercise: Exercise) : Fragment() {
         var view = inflater.inflate(R.layout.fragment_questions_container, container, false).apply {
 
 
-            tv_question.text = "${tv_question.text} ${exercise.Number.toString()}"
+            tv_question.text = "${tv_question.text} ${exercise.Number}"
             op_a.text = exercise.Optiona
             op_b.text = exercise.Optionb
             op_c.text = exercise.Optionc
