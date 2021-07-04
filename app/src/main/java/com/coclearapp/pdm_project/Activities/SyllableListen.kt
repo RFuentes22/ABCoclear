@@ -34,16 +34,16 @@ class SyllableListen : AppCompatActivity() {
 
     private fun setDataInList():ArrayList<Syllable>{
         var items:ArrayList<Syllable> = ArrayList()
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
-        items.add(Syllable(R.drawable.a))
+        items.add(Syllable(R.drawable.ma))
+        items.add(Syllable(R.drawable.me))
+        items.add(Syllable(R.drawable.mi))
+        items.add(Syllable(R.drawable.mo))
+        items.add(Syllable(R.drawable.mu))
+        items.add(Syllable(R.drawable.ama))
+        items.add(Syllable(R.drawable.ema))
+        items.add(Syllable(R.drawable.eme))
+        items.add(Syllable(R.drawable.amo))
+        items.add(Syllable(R.drawable.mimo))
 
         return items
     }
