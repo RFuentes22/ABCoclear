@@ -21,5 +21,15 @@ class SyllablesListenPractice : AppCompatActivity() {
 
             )
         }
+
+        syllables_practice.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    SyllablesPractice::class.java
+                )
+
+            )
+        }
     }
 }

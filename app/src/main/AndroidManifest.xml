@@ -13,10 +13,15 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-        <activity android:name=".Activities.VowelsPractice"></activity>
-        <activity android:name=".Activities.SyllablesPractice" />
-        <activity android:name=".Activities.InstumentsPractice" />
-        <activity android:name=".Activities.AnimalsPractice" />
+        <activity android:name=".Activities.VowelsPractice"
+                  android:screenOrientation="userLandscape">
+        </activity>
+        <activity android:name=".Activities.SyllablesPractice"
+                  android:screenOrientation="userLandscape"/>
+        <activity android:name=".Activities.InstumentsPractice"
+                  android:screenOrientation="userLandscape"/>
+        <activity android:name=".Activities.AnimalsPractice"
+                  android:screenOrientation="userLandscape"/>
         <activity
             android:name=".Activities.SyllableListen"
             android:screenOrientation="userLandscape" />

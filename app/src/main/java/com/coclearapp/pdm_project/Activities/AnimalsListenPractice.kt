@@ -21,6 +21,15 @@ class AnimalsListenPractice : AppCompatActivity() {
 
             )
         }
+
+        animals_practice.setOnClickListener{
+            startActivity(
+                Intent(
+                    this,
+                    AnimalsPractice::class.java
+                )
+            )
+        }
     }
 
 }

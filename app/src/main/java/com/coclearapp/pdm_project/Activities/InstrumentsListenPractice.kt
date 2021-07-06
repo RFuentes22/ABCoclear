@@ -21,5 +21,15 @@ class InstrumentsListenPractice : AppCompatActivity() {
 
             )
         }
+
+        instruments_practice.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    InstumentsPractice::class.java
+                )
+
+            )
+        }
     }
 }

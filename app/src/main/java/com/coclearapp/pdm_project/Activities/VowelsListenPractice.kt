@@ -21,6 +21,16 @@ class VowelsListenPractice : AppCompatActivity() {
             )
         }
 
+        vowels_practice.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    VowelsPractice::class.java
+                )
+
+            )
+        }
+
     }
 
 }

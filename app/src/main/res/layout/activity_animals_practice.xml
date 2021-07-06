@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.AnimalsPractice">
+    android:background="#C6EB9D"
+    android:gravity="center"
+    android:padding="16dp"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="0.7in"
+            android:layout_height="0.7in"
+            android:src="@drawable/ic_koala_levels"
+            />
+
+        <LinearLayout
+            android:id="@+id/answer_a"
+            android:layout_width="2in"
+            android:layout_height="0.4in"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/border"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/t_answer_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Answer a"
+                android:textSize="@dimen/high_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_b"
+            android:layout_width="2in"
+            android:layout_height="0.4in"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/border"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/t_answer_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer b"
+                android:textSize="@dimen/high_size"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_c"
+            android:layout_width="2in"
+            android:layout_height="0.4in"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/border"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/t_answer_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer c"
+                android:textSize="@dimen/high_size"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
