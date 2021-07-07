@@ -1,7 +1,7 @@
 package com.coclearapp.pdm_project.Activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.coclearapp.pdm_project.R
 
 class AnimalsPractice : AppCompatActivity() {

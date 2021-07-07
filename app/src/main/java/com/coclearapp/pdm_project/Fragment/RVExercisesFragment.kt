@@ -1,6 +1,5 @@
 package com.coclearapp.pdm_project.Fragment
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,21 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.coclearapp.pdm_project.Activities.LevelsActivity
-import com.coclearapp.pdm_project.Adapters.LettersAdapter
-import com.coclearapp.pdm_project.Adapters.PatientAdapter
 import com.coclearapp.pdm_project.Adapters.QuestionItemAdapter
-import com.coclearapp.pdm_project.Models.Question
-
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Exercise
-import com.coclearapp.pdm_project.Room.Entity.Sound
 import com.coclearapp.pdm_project.ViewModel.ExerciseViewModel
-
 import com.coclearapp.pdm_project.ViewModel.LevelViewModel
-
 import kotlinx.android.synthetic.main.fragment_grid_exercises.view.*
 
 class RVExercisesFragment(private var level: Int): Fragment(){

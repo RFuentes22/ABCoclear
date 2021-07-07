@@ -1,6 +1,7 @@
 package com.coclearapp.pdm_project.Adapters
 
 import android.content.Context
+import android.media.MediaPlayer
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +10,6 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.Models.Instrument
 import com.coclearapp.pdm_project.R
-import android.media.MediaPlayer
 
 class InstrumentAdapter(var context: Context, var arrayList: ArrayList<Instrument>) :
     RecyclerView.Adapter<InstrumentAdapter.ItemHolder>() {

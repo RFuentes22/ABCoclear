@@ -5,7 +5,6 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.coclearapp.pdm_project.Repository.PatientRepository
 import com.coclearapp.pdm_project.Room.CoclearRoomDatabase
-import com.coclearapp.pdm_project.Room.CoclearRoomDatabase_Impl
 import com.coclearapp.pdm_project.Room.Entity.Patient
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

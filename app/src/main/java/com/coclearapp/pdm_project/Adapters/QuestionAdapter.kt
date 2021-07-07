@@ -4,10 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.coclearapp.pdm_project.Models.Patient
 import com.coclearapp.pdm_project.Models.Question
 import com.coclearapp.pdm_project.R
-import kotlinx.android.synthetic.main.cardview_patient.view.*
 import kotlinx.android.synthetic.main.fragment_questions_container.view.*
 
 class QuestionAdapter (var items : List<Question>, val clickListener : (Question) -> Unit): RecyclerView.Adapter<QuestionAdapter.ViewHolder>(){
