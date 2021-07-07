@@ -1,12 +1,13 @@
 package com.coclearapp.pdm_project.Adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.coclearapp.pdm_project.Activities.PatientsActivity
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Patient
-
 import kotlinx.android.synthetic.main.cardview_patient.view.*
 
 class PatientAdapter(var items : List<Patient>, val clickListener : (Patient) -> Unit) : RecyclerView.Adapter<PatientAdapter.ViewHolder>() {
@@ -34,6 +35,15 @@ class PatientAdapter(var items : List<Patient>, val clickListener : (Patient) ->
 
         fun bind(item: Patient, clickListener: (Patient) -> Unit) = with(itemView) {
             patient_name.text = item.Name_Patient
+
+            edit_patient.setOnClickListener {
+                Log.d("Editar","Editar")
+            }
+
+
+           delete_patient.setOnClickListener {
+               PatientsActivity.patienDeletedClicked(item.idPatient)
+           }
 
             this.setOnClickListener { clickListener(item) }
         }

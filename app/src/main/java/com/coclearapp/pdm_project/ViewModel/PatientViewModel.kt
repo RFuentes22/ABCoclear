@@ -32,4 +32,10 @@ class PatientViewModel(application: Application) : AndroidViewModel(application)
 
     //funcion para conseguir ultimo id
     fun getLastid() = patientRepo.getLastid()
+
+    //funcion eliminar paciente
+    fun deletePatient(idPatient: Long) = viewModelScope.launch(Dispatchers.IO) {
+        patientRepo.deletePatient(idPatient)
+    }
+
 }

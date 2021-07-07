@@ -32,4 +32,7 @@ interface PatientDao {
 
     @Query("DELETE FROM Patient")
     fun deleteAllPatient()
+
+    @Query("DELETE FROM Patient WHERE idPatient == :idPa")
+    fun deletePatient(idPa : Long)
 }
