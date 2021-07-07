@@ -1,12 +1,14 @@
 package com.coclearapp.pdm_project.Activities
 
+
+import android.content.ClipData
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.coclearapp.pdm_project.Models.Item
+import androidx.appcompat.app.AppCompatActivity
 import com.coclearapp.pdm_project.R
 import kotlinx.android.synthetic.main.activity_animals_practice.*
 
@@ -24,7 +26,7 @@ class AnimalsPractice : AppCompatActivity() {
         Item(R.drawable.perro,3,"Vaca","Elefante","Perro",R.drawable.perro),
         Item(R.drawable.pollito,1,"Pollito","Elefante","Gato",R.drawable.pollito),
         Item(R.drawable.rana,2,"Perro","Rana","Vaca",R.drawable.gato),
-        Item(R.drawable.vaca,1,"Vaca","Elefante","Rama",R.drawable.gato)
+        Item(R.drawable.vaca,1,"Vaca","Elefante","Rama",R.drawable.gato),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
