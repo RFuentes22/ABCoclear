@@ -25,7 +25,7 @@ class InstumentsPractice : AppCompatActivity() {
         Item(R.drawable.triangulo, 3,"Tambor","Platillos","Triangulo",R.raw.triangulo),
         Item(R.drawable.trompeta, 1,"Trompeta","Saxofon","Clarinete",R.raw.trompeta),
         Item(R.drawable.violin, 1,"Violin","Pandereta","Arpa",R.raw.violin),
-        Item(R.drawable.xilofon, 3,"Flauta","Saxofon","Xilofon",R.raw.xilofon),
+        Item(R.drawable.xilofon, 3,"Flauta","Saxofon","Xilofon",R.raw.xilofon)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
