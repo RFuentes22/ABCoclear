@@ -35,4 +35,7 @@ interface PatientDao {
 
     @Query("DELETE FROM Patient WHERE idPatient == :idPa")
     fun deletePatient(idPa : Long)
+
+    @Query("UPDATE Patient SET Name_Patient = :name_Patient, Date = :date_Patient WHERE idPatient == :idPa")
+    fun editPatient(idPa : Long, name_Patient: String, date_Patient: String)
 }

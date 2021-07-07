@@ -38,4 +38,9 @@ class PatientViewModel(application: Application) : AndroidViewModel(application)
         patientRepo.deletePatient(idPatient)
     }
 
+    //funcion editar paciente
+    fun editPatient(patient: Patient) = viewModelScope.launch(Dispatchers.IO) {
+        patientRepo.editPatient(patient)
+    }
+
 }

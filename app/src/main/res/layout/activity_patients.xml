@@ -3,21 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/list_bg"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/medium_size">
+        android:padding="@dimen/medium_size"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <EditText
+            android:id="@+id/et_search_patient"
             android:layout_width="267dp"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-                android:textColor="@color/white"
-                android:fontFamily="@font/alphabet_fridge_magnets"
-                android:textColorHint="@color/white"
-            android:hint="@string/pacient_name" />
+            android:fontFamily="@font/alphabet_fridge_magnets"
+            android:hint="@string/pacient_name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:focusable="true"
+            android:selectAllOnFocus="false"/>
 
         <ImageButton
             android:id="@+id/btn_search_patient"

@@ -22,8 +22,13 @@ class PatientsActivity : AppCompatActivity(), LifecycleOwner {
     private lateinit var viewManager: RecyclerView.LayoutManager
     companion object {
         lateinit var patientViewModel: PatientViewModel
-        fun patienDeletedClicked(idPa: Long) {
 
+        fun patientEditClicked(patient: Patient){
+            //Log.d("edit",patient.Name_Patient + " " + patient.Date)
+            patientViewModel.editPatient(patient)
+        }
+
+        fun patientDeleteClicked(idPa: Long) {
             patientViewModel.deletePatient(idPa)
         }
     }
@@ -35,7 +40,6 @@ class PatientsActivity : AppCompatActivity(), LifecycleOwner {
         setContentView(R.layout.activity_patients)
         auth = FirebaseAuth.getInstance()
         mDatabase = FirebaseDatabase.getInstance().reference
-
 
         getDataFirebase()
 
@@ -51,7 +55,6 @@ class PatientsActivity : AppCompatActivity(), LifecycleOwner {
 
     fun initRecycle(patients: List<Patient>) {
         viewManager = LinearLayoutManager(this)
-
 
         viewAdapter =
             PatientAdapter(patients, { patientitem: Patient -> patientItemClicked(patientitem) })

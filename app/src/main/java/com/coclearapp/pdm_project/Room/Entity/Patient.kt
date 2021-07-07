@@ -11,9 +11,9 @@ data class Patient(
         @PrimaryKey(autoGenerate = true)
         var idPatient : Long = 0,
         @ColumnInfo(name = "Name_Patient")
-        val Name_Patient: String,
+        var Name_Patient: String,
         @ColumnInfo(name = "Date")
-        val Date: String,
+        var Date: String,
         @ColumnInfo(name = "Level")
         val Level: Int,
         @ColumnInfo(name = "idUser")
