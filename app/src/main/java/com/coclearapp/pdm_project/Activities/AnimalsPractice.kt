@@ -8,10 +8,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.coclearapp.pdm_project.Models.Item
-
 import androidx.appcompat.app.AppCompatActivity
 import com.coclearapp.pdm_project.R
-import kotlinx.android.synthetic.main.activity_instuments_practice.*
+import kotlinx.android.synthetic.main.activity_animals_practice.*
 
 class AnimalsPractice : AppCompatActivity() {
     var mMediaPlayer: MediaPlayer? = null
@@ -77,7 +76,7 @@ class AnimalsPractice : AppCompatActivity() {
             t_answer_a.text = itemList[index].opc1
             t_answer_b.text = itemList[index].opc2
             t_answer_c.text = itemList[index].opc3
-
+            playSound(index)
         }
 
     }
