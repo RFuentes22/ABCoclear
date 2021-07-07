@@ -16,9 +16,10 @@
         android:gravity="center"
         >
         <ImageView
+            android:id="@+id/icon"
             android:layout_width="0.8in"
             android:layout_height="0.8in"
-            android:src="@drawable/syllables_image"
+            android:src="@drawable/ic_volume_up_black_24dp"
             />
 
         <LinearLayout
@@ -32,13 +33,13 @@
             android:background="@drawable/border"
             android:layout_margin="5dp">
 
-            <TextView
+            <ImageView
                 android:id="@+id/t_answer_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Answer a"
-                android:textSize="@dimen/high_size" />
+                android:src="@drawable/me"
+                />
 
         </LinearLayout>
 
@@ -53,13 +54,13 @@
             android:background="@drawable/border"
             android:layout_margin="5dp">
 
-            <TextView
+            <ImageView
                 android:id="@+id/t_answer_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Answer b"
-                android:textSize="@dimen/high_size"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:src="@drawable/ma"
+                />
 
         </LinearLayout>
 
@@ -74,13 +75,13 @@
             android:background="@drawable/border"
             android:layout_margin="5dp">
 
-            <TextView
+            <ImageView
                 android:id="@+id/t_answer_c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Answer c"
-                android:textSize="@dimen/high_size"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:src="@drawable/amo"
+                />
 
         </LinearLayout>
 
