@@ -104,8 +104,3 @@ dependencies {
 
     implementation 'com.android.support:multidex:1.0.3'
 }
-compileKotlin {
-    kotlinOptions {
-        languageVersion = "1.4"
-    }
-}
