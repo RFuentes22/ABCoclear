@@ -25,7 +25,7 @@ class AnimalsPractice : AppCompatActivity() {
         Item(R.drawable.perro,3,"Vaca","Elefante","Perro",R.drawable.perro),
         Item(R.drawable.pollito,1,"Pollito","Elefante","Gato",R.drawable.pollito),
         Item(R.drawable.rana,2,"Perro","Rana","Vaca",R.drawable.gato),
-        Item(R.drawable.vaca,1,"Vaca","Elefante","Rama",R.drawable.gato)
+        Item(R.drawable.vaca,1,"Vaca","Elefante","Rama",R.drawable.gato),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
