@@ -3,8 +3,8 @@ package com.coclearapp.pdm_project.Activities
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.coclearapp.pdm_project.ViewModel.LevelViewModel
 import com.coclearapp.pdm_project.R
+import com.coclearapp.pdm_project.ViewModel.LevelViewModel
 import kotlinx.android.synthetic.main.activity_levels.*
 
 

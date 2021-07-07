@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Exercise
-import com.coclearapp.pdm_project.Room.Entity.Sound
 import kotlinx.android.synthetic.main.level_item.view.*
 
 

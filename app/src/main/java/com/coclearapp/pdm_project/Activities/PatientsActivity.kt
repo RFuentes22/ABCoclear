@@ -1,25 +1,21 @@
 package com.coclearapp.pdm_project.Activities
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.Adapters.PatientAdapter
-
-
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Patient
 import com.coclearapp.pdm_project.ViewModel.PatientViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-
-
 import kotlinx.android.synthetic.main.activity_patients.*
 
 class PatientsActivity: AppCompatActivity(), LifecycleOwner {

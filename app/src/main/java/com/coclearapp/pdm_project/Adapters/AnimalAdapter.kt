@@ -7,11 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.Models.Animal
 import com.coclearapp.pdm_project.R
-import kotlinx.android.synthetic.main.grid_animal_list_item.view.*
 
 class AnimalAdapter(var context: Context, var arrayList: ArrayList<Animal>):RecyclerView.Adapter<AnimalAdapter.ItemHolder>(){
     var mMediaPlayer: MediaPlayer? = null

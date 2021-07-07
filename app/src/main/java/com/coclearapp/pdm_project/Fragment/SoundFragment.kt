@@ -9,16 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.load.engine.Resource
 import com.coclearapp.pdm_project.Adapters.LettersAdapter
-import com.coclearapp.pdm_project.Adapters.PatientAdapter
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Sound
 import com.coclearapp.pdm_project.ViewModel.LevelViewModel
 import com.coclearapp.pdm_project.ViewModel.SoundViewModel
-import kotlinx.android.synthetic.main.fragment_grid_exercises.*
 import kotlinx.android.synthetic.main.fragment_grid_exercises.view.*
 
 class SoundFragment(private val level: Int): Fragment(){

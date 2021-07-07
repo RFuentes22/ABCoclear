@@ -1,13 +1,11 @@
 package com.coclearapp.pdm_project.Activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.coclearapp.pdm_project.Adapters.AnimalAdapter
 import com.coclearapp.pdm_project.Adapters.SyllableAdapter
-import com.coclearapp.pdm_project.Models.Animal
 import com.coclearapp.pdm_project.Models.Syllable
 import com.coclearapp.pdm_project.R
 

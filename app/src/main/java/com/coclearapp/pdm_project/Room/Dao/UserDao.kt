@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.coclearapp.pdm_project.Room.Entity.Patient
 import com.coclearapp.pdm_project.Room.Entity.User
 
 @Dao

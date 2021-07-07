@@ -10,16 +10,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProviders
 import com.coclearapp.pdm_project.R
-import com.coclearapp.pdm_project.Repository.UserRepository
-import com.coclearapp.pdm_project.Room.Entity.User
-import com.coclearapp.pdm_project.ViewModel.UserViewModel
-
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
-import java.io.File
-import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_signup.*
 
 
