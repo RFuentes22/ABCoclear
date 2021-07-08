@@ -6,6 +6,15 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <ImageButton
+        android:id="@+id/ok_edit_patient"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|right"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_edit_patient"
+        android:visibility="gone" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -15,39 +24,66 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/cardview_patient_rect"
             android:gravity="center"
-            android:padding="@dimen/medium_size"
-            android:background="@drawable/rounded_edge"
-            >
+            android:padding="@dimen/medium_size">
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/ic_icons8_contactos" />
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_user_list_patient" />
 
             <TextView
                 android:id="@+id/patient_name"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="4"
+                android:fontFamily="@font/alphabet_fridge_magnets"
+                android:gravity="center"
+                android:text="@string/pacient_name"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="@dimen/extra_size" />
+
+            <EditText
+                android:id="@+id/et_patient_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/alphabet_fridge_magnets"
                 android:gravity="center"
                 android:text="@string/pacient_name"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="@dimen/extra_size"
-            android:fontFamily="@font/action_man_shaded"/>
+                android:visibility="gone" />
 
-            <TextView
-                android:id="@+id/patient_level"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+            <EditText
+                android:id="@+id/et_patient_date"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center"
-                android:text="2"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
-                android:textSize="@dimen/extra_size"
-            android:fontFamily="@font/angles_octagon"/>
+                android:hint="Fecha de nacimiento"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/edit_patient"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_edit_patient" />
+
+            <ImageButton
+                android:id="@+id/delete_patient"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_delete_patient" />
         </LinearLayout>
+
 
     </androidx.cardview.widget.CardView>
 

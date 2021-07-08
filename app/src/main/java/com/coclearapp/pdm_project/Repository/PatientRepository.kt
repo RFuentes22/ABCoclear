@@ -17,4 +17,15 @@ class PatientRepository(private val patientDao: PatientDao){
     }
 
     fun getLastid():LiveData<Long> = patientDao.getLastid()
+
+    @WorkerThread
+    suspend  fun deletePatient(idPatient: Long) {
+        patientDao.deletePatient(idPatient)
+    }
+
+    @WorkerThread
+    suspend  fun editPatient(patient: Patient) {
+        patientDao.editPatient(patient.idPatient,patient.Name_Patient,patient.Date)
+    }
+
 }

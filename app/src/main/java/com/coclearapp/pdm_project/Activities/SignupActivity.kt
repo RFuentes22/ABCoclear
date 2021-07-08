@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProviders
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.User
@@ -16,7 +15,6 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup.*
 import java.util.*
-import androidx.lifecycle.Observer
 
 
 @Suppress("DEPRECATION")
@@ -68,7 +66,7 @@ class SignupActivity : AppCompatActivity() {
 
                     //Guarda datos en Firebase
                     childUpdates.put("/User/" + user!!.uid + "/Name", input_name.text.toString())
-                    childUpdates.put("/User/" + user!!.uid + "/Tipo", tipoUser)
+                    childUpdates.put("/User/" + user.uid + "/Tipo", tipoUser)
 
                     //Guarda datos en BD
                     val viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)

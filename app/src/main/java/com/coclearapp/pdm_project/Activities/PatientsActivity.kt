@@ -5,27 +5,33 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.coclearapp.pdm_project.Adapters.PatientAdapter
-
-
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Patient
 import com.coclearapp.pdm_project.ViewModel.PatientViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-
-
 import kotlinx.android.synthetic.main.activity_patients.*
 
-class PatientsActivity: AppCompatActivity(), LifecycleOwner {
+class PatientsActivity : AppCompatActivity(), LifecycleOwner {
     private lateinit var viewAdapter: PatientAdapter
     private lateinit var viewManager: RecyclerView.LayoutManager
-    private lateinit var patientViewModel: PatientViewModel
+    companion object {
+        lateinit var patientViewModel: PatientViewModel
+
+        fun patientEditClicked(patient: Patient){
+            //Log.d("edit",patient.Name_Patient + " " + patient.Date)
+            patientViewModel.editPatient(patient)
+        }
+
+        fun patientDeleteClicked(idPa: Long) {
+            patientViewModel.deletePatient(idPa)
+        }
+    }
     private lateinit var auth: FirebaseAuth
     private var mDatabase: DatabaseReference? = null
 
@@ -34,7 +40,6 @@ class PatientsActivity: AppCompatActivity(), LifecycleOwner {
         setContentView(R.layout.activity_patients)
         auth = FirebaseAuth.getInstance()
         mDatabase = FirebaseDatabase.getInstance().reference
-
 
         getDataFirebase()
 
@@ -48,11 +53,11 @@ class PatientsActivity: AppCompatActivity(), LifecycleOwner {
 
     }
 
-    fun initRecycle(patients : List<Patient>){
+    fun initRecycle(patients: List<Patient>) {
         viewManager = LinearLayoutManager(this)
 
-
-        viewAdapter = PatientAdapter(patients,{ patientitem: Patient-> patientItemClicked(patientitem)})
+        viewAdapter =
+            PatientAdapter(patients, { patientitem: Patient -> patientItemClicked(patientitem) })
 
         rv_patients.apply {
             setHasFixedSize(true)
@@ -61,21 +66,24 @@ class PatientsActivity: AppCompatActivity(), LifecycleOwner {
         }
     }
 
-    private fun patientItemClicked(item: Patient){
+    private fun patientItemClicked(item: Patient) {
 
-        startActivity(Intent(this, LevelsActivity::class.java).putExtra("name",item.Name_Patient))
+        startActivity(
+            Intent(this, LevelsActivity::class.java).putExtra("name", item.Name_Patient)
+                .putExtra("level", item.Level.toString())
+        )
     }
 
-    private fun getDataFirebase(){
+    private fun getDataFirebase() {
         val user = auth.currentUser
         mDatabase!!.child("User/${user!!.uid}").addValueEventListener(
-            object: ValueEventListener {
+            object : ValueEventListener {
                 override fun onCancelled(p0: DatabaseError) {
                     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 }
 
                 override fun onDataChange(p0: DataSnapshot) {
-                    Log.d("Patient",p0.value.toString())
+                    Log.d("Patient", p0.value.toString())
 
                 }
 

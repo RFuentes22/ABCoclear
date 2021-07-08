@@ -1,53 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center"
-              android:padding="16dp"
->
-<LinearLayout
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
->
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cerrar Sesion"
-            android:textSize="@dimen/medium_size"
+              android:background="#C9D8E3"
+              android:gravity="right|center">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/owl"
             android:layout_gravity="center"
-    />
+            android:layout_margin="30dp"
+            />
 
-    <ImageButton
-            android:layout_gravity="end"
+    <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_power_settings_new_black_24dp"
-            android:background="@color/transparent_0"
-    />
-</LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right|center"
+            >
+        <LinearLayout
+                android:id="@+id/add_patient"
+                android:layout_width="2in"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="@dimen/small_size"
+                android:elevation="10dp"
+                android:background="@drawable/myrect"
+                android:layout_margin="5dp"
+                >
+
+            <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="0.3in"
+                    android:layout_height="0.3in"
+                    android:background="@drawable/ic_add_patient_home"
+                    android:layout_margin="@dimen/medium_size"
+                    tools:ignore="Suspicious0dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar Paciente"
+                    android:textSize="@dimen/high_size"
+                    android:fontFamily="@font/alphabet_fridge_magnets"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/list_patients"
+                android:layout_width="2in"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="@dimen/small_size"
+                android:elevation="10dp"
+                android:background="@drawable/myrect"
+                android:layout_margin="5dp"
+                >
+            <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="0.3in"
+                    android:layout_height="0.3in"
+                    android:layout_margin="@dimen/medium_size"
+                    android:background="@drawable/ic_list_patient_home"
+
+                    tools:ignore="Suspicious0dp" />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lista Pacientes"
+                    android:textSize="22dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/alphabet_fridge_magnets"
+                    android:layout_gravity="center"
+                    />
 
 
+        </LinearLayout>
 
-    <ImageButton
-            android:id="@+id/add_patient"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_icons8_contacto"
-            android:background="@drawable/circular_textview"
-            android:layout_marginTop="@dimen/small_size"
-    />
-    <ImageButton
-            android:id="@+id/list_patients"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/ic_icons8_allpatients"
-            android:background="@drawable/circular_tv"
-            android:layout_marginTop="@dimen/small_size"
-    />
+        <LinearLayout
+                android:id="@+id/logout"
+                android:layout_width="2in"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="@dimen/small_size"
+                android:elevation="10dp"
+                android:background="@drawable/myrect"
+                android:layout_margin="5dp"
+                >
+            <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="0.3in"
+                    android:layout_height="0.3in"
+                    android:background="@drawable/ic_logout_home"
+                    tools:ignore="Suspicious0dp"
+                    android:layout_margin="@dimen/medium_size"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerrar Sesion"
+                    android:textSize="@dimen/high_size"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/alphabet_fridge_magnets"
+                    android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>

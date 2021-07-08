@@ -9,16 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.load.engine.Resource
 import com.coclearapp.pdm_project.Adapters.LettersAdapter
-import com.coclearapp.pdm_project.Adapters.PatientAdapter
 import com.coclearapp.pdm_project.R
 import com.coclearapp.pdm_project.Room.Entity.Sound
 import com.coclearapp.pdm_project.ViewModel.LevelViewModel
 import com.coclearapp.pdm_project.ViewModel.SoundViewModel
-import kotlinx.android.synthetic.main.fragment_grid_exercises.*
 import kotlinx.android.synthetic.main.fragment_grid_exercises.view.*
 
 class SoundFragment(private val level: Int): Fragment(){
@@ -30,8 +26,8 @@ class SoundFragment(private val level: Int): Fragment(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        model = activity?.run {
-            ViewModelProviders.of(this).get(LevelViewModel::class.java)
+        model = activity.run {
+            ViewModelProviders.of(this!!).get(LevelViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
 
     }
@@ -64,16 +60,11 @@ class SoundFragment(private val level: Int): Fragment(){
         view.close_button.setOnClickListener {
             var fragment = LevelsSoundsFragment.newInstance()
 
-            fragmentManager!!
-                    .beginTransaction()
-                    .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                    .replace(R.id.fl_content, fragment)
-                    .commit()
 
 
         }
 
-        view.id_level_rv.text = "${view.id_level_rv.text} ${level.toString()}"
+        view.id_level_rv.text = "${view.id_level_rv.text} $level"
 
         view.rview.apply {
             layoutManager = GridLayoutManager(this.context,2)

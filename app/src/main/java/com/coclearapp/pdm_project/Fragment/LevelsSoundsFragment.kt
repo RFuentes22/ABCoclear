@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import com.coclearapp.pdm_project.ViewModel.LevelViewModel
 import com.coclearapp.pdm_project.R
+import com.coclearapp.pdm_project.ViewModel.LevelViewModel
 import kotlinx.android.synthetic.main.fragment_levels_sounds.view.*
 
 class LevelsSoundsFragment : Fragment() {
@@ -16,31 +16,18 @@ class LevelsSoundsFragment : Fragment() {
             ib_sounds_level1.setOnClickListener {
                 var fragment = SoundFragment.newInstance(1)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in, R.anim.push_left_out, R.anim.push_left_in, R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
 
             ib_sounds_level2.setOnClickListener {
                 var fragment = SoundFragment.newInstance(2)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
             }
 
             ib_sounds_level3.setOnClickListener {
                 var fragment = SoundFragment.newInstance(3)
 
-                fragmentManager!!
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.push_left_in,R.anim.push_left_out,R.anim.push_left_in,R.anim.push_left_out)
-                        .replace(R.id.fl_content, fragment)
-                        .commit()
+
             }
         }
     }
@@ -58,8 +45,8 @@ class LevelsSoundsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        model = activity?.run {
-            ViewModelProviders.of(this).get(LevelViewModel::class.java)
+        model = activity.run {
+            ViewModelProviders.of(this!!).get(LevelViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
 
     }

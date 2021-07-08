@@ -2,26 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:background="@drawable/list_bg"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/medium_size">
+        android:padding="@dimen/medium_size"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <EditText
+            android:id="@+id/et_search_patient"
             android:layout_width="267dp"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:hint="@string/pacient_name" />
+            android:fontFamily="@font/alphabet_fridge_magnets"
+            android:hint="@string/pacient_name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:focusable="true"
+            android:selectAllOnFocus="false"/>
 
         <ImageButton
             android:id="@+id/btn_search_patient"
-            android:layout_width="wrap_content"
+            android:layout_width="4dp"
             android:layout_height="45dp"
             android:layout_weight="1"
-            android:background="@drawable/ic_icons8_busqueda"
+            android:background="@drawable/ic_search_list_patient"
 
             />
     </LinearLayout>
